@@ -18,14 +18,21 @@ body {
     height: 100%;
     width: 100%;
     background-color: #e5eeee;
+    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+    letter-spacing: 1.5px;
 }
 
 h3 {
-    margin: 0;
+    margin: 50px 10px 50px 0;
     display: inline-block;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .sign-form {
+    box-sizing: border-box;
+    padding: 0 70px;
     width: 400px;
     height: 496px;
     background: linear-gradient(32deg, rgba(48, 35, 174, 0.8) 0%, rgba(200, 109, 215, 0.7) 100%),
@@ -35,6 +42,7 @@ h3 {
 
 input[type='text'],
 input[type='password'] {
+    margin: 10px 0 20px 0;
     width: 261px;
     height: 42px;
     border: 2px solid rgba(191, 185, 204, 0.54);
@@ -46,5 +54,5 @@ label[for='userpassword'] {
     color: #fbf6e4;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+
 }
