@@ -55,6 +55,7 @@ input[type='password'] {
     padding-left: 21px;
     border: 2px solid rgba(191, 185, 204, 0.54);
     background-color: transparent;
+    box-sizing: border-box;
     color: #ffffff;
     outline: none;
 }
@@ -103,10 +104,10 @@ input[type='checkbox']:checked+label::before {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-button {
+button.sign-in {
     margin: 30px 0;
-    width: 269px;
-    height: 46px;
+    width: 261px;
+    height: 42px;
     background-color: #23ae92;
     border: none;
     font-size: 18px;
@@ -114,6 +115,28 @@ button {
     letter-spacing: 1.5px;
     outline: none;
     cursor: pointer;
+    transition: all 0.4s;
+}
+
+button.sign-in span {
+    position: relative;
+    transition: 0.4s;
+}
+
+button.sign-in span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+button.sign-in:hover span {
+    padding-right: 25px;
+}
+
+button.sign-in:hover span::after {
+    opacity: 1;
+    right: 0;
 }
 
 .helpers {
@@ -136,6 +159,9 @@ button {
     padding-bottom: 3px;
     opacity: 0.5;
 }
+
+
+
 
 /* .form-shadow {
     width: 466px;
