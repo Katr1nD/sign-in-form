@@ -18,11 +18,11 @@
             <form action="#" method="GET">
                 <div>
                     <label for="username">Username</label>
-                    <input type="text" placeholder="Enter your full name" name="username" id="username" />
+                    <input type="text" name="username" id="username" />
                 </div>
                 <div>
                     <label for="userpassword">Password</label>
-                    <input type="password" placeholder="Put your phone number" name="userpassword" id="userpassword" />
+                    <input type="password" name="userpassword" id="userpassword" />
                 </div>
                 <div>
                     <input checked type="checkbox" name="signed-in" id="signed-in" />
@@ -30,8 +30,10 @@
                 </div>
                 <button type="submit">Sign in</button>
             </form>
-            <a href="#">Forgot password</a>
-            <a href="#">Create an account</a>
+            <div class="helpers">
+                <a class="remind-password" href="#">Forgot password</a>
+                <a class="new-account" href="#">Create an account</a>
+            </div>
         </div>
     </div>
 
