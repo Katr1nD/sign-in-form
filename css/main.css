@@ -4,20 +4,45 @@ html {
 }
 
 body {
+    margin: 0;
     height: 100%;
     width: 100%;
 }
 
 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     background-color: #e5eeee;
 }
 
-.form {
+h3 {
+    margin: 0;
+    display: inline-block;
+}
+
+.sign-form {
     width: 400px;
     height: 496px;
-    background-image: linear-gradient(32deg, #3023ae 0%, #c86dd7 100%);
-    background-image: url('../img/Vector_Smart_Object.png');
+    background: linear-gradient(32deg, rgba(48, 35, 174, 0.8) 0%, rgba(200, 109, 215, 0.7) 100%),
+        url('../img/Vector_Smart_Object.png');
     box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 261px;
+    height: 42px;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    background-color: transparent;
+}
+
+label[for='username'],
+label[for='userpassword'] {
+    color: #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Quicksand;
 }
