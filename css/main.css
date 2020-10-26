@@ -44,6 +44,7 @@ h3:hover {
     height: 496px;
     background: linear-gradient(32deg, rgba(48, 35, 174, 0.8) 0%, rgba(200, 109, 215, 0.7) 100%),
         url('../img/Vector_Smart_Object.png');
+    box-shadow: 0px 15px 20px grey;
 }
 
 input[type='text'],
@@ -58,6 +59,7 @@ input[type='password'] {
     box-sizing: border-box;
     color: #ffffff;
     outline: none;
+    cursor: text;
 }
 
 input[type='text']:focus,
@@ -153,18 +155,13 @@ button.sign-in:hover span::after {
 .remind-password,
 .new-account {
     margin-top: 0;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px;
-    opacity: 0.5;
 }
 
-
-
-
-/* .form-shadow {
-    width: 466px;
-    height: 196px;
-    box-shadow: 0 0 20px rgba(2, 41, 120, 0.91);
-} */
+.remind-password:hover,
+.new-account:hover {
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
